@@ -47,19 +47,36 @@
 
 // 3 Write a java program to find out given age is eligible to vote or not?
 
+// import java.util.*;
+
+// public class Basicproblem1 {
+//     public static void main(String[] args) {
+//         Scanner s = new Scanner(System.in);
+//         System.out.println("Enter the age");
+//         int age = s.nextInt();
+
+//         if (age >= 18) {
+//             System.out.println("eligible to vote");
+//         } else {
+//             System.out.println("u not eligible to vote");
+//         }
+//         s.close();
+//     }
+// }
+
+// 4) Write a java program to find out given number is even or odd?
 import java.util.*;
 
 public class Basicproblem1 {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Enter the age");
-        int age = s.nextInt();
+        Scanner s =new Scanner(System.in);
+        System.out.println("Enter the number");
+        int number =s.nextInt();
 
-        if (age >= 18) {
-            System.out.println("eligible to vote");
-        } else {
-            System.out.println("u not eligible to vote");
+        if(number%2==0){
+            System.out.println("Even Number");
+        }else{
+            System.out.println("Odd Number");
         }
-        s.close();
     }
 }
