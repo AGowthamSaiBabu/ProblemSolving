@@ -65,18 +65,38 @@
 // }
 
 // 4) Write a java program to find out given number is even or odd?
+// import java.util.*;
+
+// public class Basicproblem1 {
+//     public static void main(String[] args) {
+//         Scanner s =new Scanner(System.in);
+//         System.out.println("Enter the number");
+//         int number =s.nextInt();
+
+//         if(number%2==0){
+//             System.out.println("Even Number");
+//         }else{
+//             System.out.println("Odd Number");
+//         }
+//         s.close();
+//     }
+// }
+
+// Q) Write a java program to find out given number is odd or not?
+
 import java.util.*;
 
 public class Basicproblem1 {
     public static void main(String[] args) {
         Scanner s =new Scanner(System.in);
-        System.out.println("Enter the number");
+        System.out.println("Enter the number!");
         int number =s.nextInt();
 
-        if(number%2==0){
-            System.out.println("Even Number");
+        if(number%2!=0){
+            System.out.println("It is odd number");
         }else{
-            System.out.println("Odd Number");
+            System.out.println("It is not a odd number");
         }
+        s.close();
     }
 }
