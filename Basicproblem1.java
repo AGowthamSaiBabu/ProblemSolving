@@ -82,21 +82,46 @@
 //     }
 // }
 
-// Q) Write a java program to find out given number is odd or not?
+// 5) Write a java program to find out given number is odd or not?
+
+// import java.util.*;
+
+// public class Basicproblem1 {
+//     public static void main(String[] args) {
+//         Scanner s =new Scanner(System.in);
+//         System.out.println("Enter the number!");
+//         int number =s.nextInt();
+
+//         if(number%2!=0){
+//             System.out.println("It is odd number");
+//         }else{
+//             System.out.println("It is not a odd number");
+//         }
+//         s.close();
+//     }
+// }
+
+
+// 6) Write a java program to check given number is positive or negative?
 
 import java.util.*;
 
 public class Basicproblem1 {
     public static void main(String[] args) {
         Scanner s =new Scanner(System.in);
-        System.out.println("Enter the number!");
+        System.out.println("Enter the number");
         int number =s.nextInt();
 
-        if(number%2!=0){
-            System.out.println("It is odd number");
-        }else{
-            System.out.println("It is not a odd number");
+        if(number==0){
+            System.out.println("This is positive or negative number");
+            System.exit(0);
         }
+
+        if(number>0)
+            System.out.println("It is positive number");
+        else
+            System.err.println("It is negative number");
+
         s.close();
     }
 }
