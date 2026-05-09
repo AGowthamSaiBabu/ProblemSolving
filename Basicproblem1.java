@@ -113,7 +113,7 @@ public class Basicproblem1 {
         int number =s.nextInt();
 
         if(number==0){
-            System.out.println("This is positive or negative number");
+            System.out.println("This is Not positive or negative number");
             System.exit(0);
         }
 
