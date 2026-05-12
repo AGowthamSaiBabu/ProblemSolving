@@ -104,24 +104,44 @@
 
 // 6) Write a java program to check given number is positive or negative?
 
+// import java.util.*;
+
+// public class Basicproblem1 {
+//     public static void main(String[] args) {
+//         Scanner s =new Scanner(System.in);
+//         System.out.println("Enter the number");
+//         int number =s.nextInt();
+
+//         if(number==0){
+//             System.out.println("This is Not positive or negative number");
+//             System.exit(0);
+//         }
+
+//         if(number>0)
+//             System.out.println("It is positive number");
+//         else
+//             System.err.println("It is negative number");
+
+//         s.close();
+//     }
+// }
+
+
+// 7) Write a java program to find out given year is a leap year or not?
+
+import java.time.Year;
 import java.util.*;
 
 public class Basicproblem1 {
     public static void main(String[] args) {
         Scanner s =new Scanner(System.in);
-        System.out.println("Enter the number");
-        int number =s.nextInt();
-
-        if(number==0){
-            System.out.println("This is Not positive or negative number");
-            System.exit(0);
-        }
-
-        if(number>0)
-            System.out.println("It is positive number");
+        System.out.println("Enter the Year :");
+        int year =s.nextInt();
+        
+        if(year%4==0 && year%100!=0 || year%400==0)
+            System.out.println("It is a leap");
         else
-            System.err.println("It is negative number");
-
+            System.out.println("It is not a leap year");
         s.close();
     }
 }
