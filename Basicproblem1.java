@@ -101,7 +101,6 @@
 //     }
 // }
 
-
 // 6) Write a java program to check given number is positive or negative?
 
 // import java.util.*;
@@ -126,22 +125,39 @@
 //     }
 // }
 
-
 // 7) Write a java program to find out given year is a leap year or not?
 
-import java.time.Year;
+// import java.util.*;
+
+// public class Basicproblem1 {
+//     public static void main(String[] args) {
+//         Scanner s =new Scanner(System.in);
+//         System.out.println("Enter the Year :");
+//         int year =s.nextInt();
+
+//         if(year%4==0 && year%100!=0 || year%400==0)
+//             System.out.println("It is a leap");
+//         else
+//             System.out.println("It is not a leap year");
+//         s.close();
+//     }
+// }
+
+// 8) Write a java program to display given alphabet is a vowel or consonant
+
 import java.util.*;
 
 public class Basicproblem1 {
     public static void main(String[] args) {
         Scanner s =new Scanner(System.in);
-        System.out.println("Enter the Year :");
-        int year =s.nextInt();
-        
-        if(year%4==0 && year%100!=0 || year%400==0)
-            System.out.println("It is a leap");
+        System.out.println("Enter the alphabet");
+        char ch =s.next().charAt(0);
+
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+            System.out.println("It is a Vowel");
         else
-            System.out.println("It is not a leap year");
+            System.out.println("It is a consonent");
+
         s.close();
     }
 }
