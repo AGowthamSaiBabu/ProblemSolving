@@ -145,19 +145,40 @@
 
 // 8) Write a java program to display given alphabet is a vowel or consonant
 
+// import java.util.*;
+
+// public class Basicproblem1 {
+//     public static void main(String[] args) {
+//         Scanner s =new Scanner(System.in);
+//         System.out.println("Enter the alphabet");
+//         char ch =s.next().charAt(0);
+
+//         if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+//             System.out.println("It is a Vowel");
+//         else
+//             System.out.println("It is a consonent");
+
+//         s.close();
+//     }
+// }
+
+// 9) John went to shoe showroom to buy a pair of shows. But he has a myth that 
+// if shoe price divisible by 3 and 5 then only he can purchase that show. Write 
+// a java program to enter the shoe price and display John can buy that show or 
+// not?
+
 import java.util.*;
 
 public class Basicproblem1 {
     public static void main(String[] args) {
         Scanner s =new Scanner(System.in);
-        System.out.println("Enter the alphabet");
-        char ch =s.next().charAt(0);
+        System.out.println("Enter the shoe price :");
+        int price =s.nextInt();
 
-        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
-            System.out.println("It is a Vowel");
-        else
-            System.out.println("It is a consonent");
-
-        s.close();
+        if(price%3==0 && price%5==0){
+            System.out.println("jone can buy the shoe");
+        }else{
+            System.out.println("jone can't buy the shoe");
+        }
     }
 }
