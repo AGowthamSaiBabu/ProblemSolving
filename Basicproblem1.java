@@ -167,18 +167,39 @@
 // a java program to enter the shoe price and display John can buy that show or 
 // not?
 
+
+// import java.util.*;
+
+// public class Basicproblem1 {
+//     public static void main(String[] args) {
+//         Scanner s =new Scanner(System.in);
+//         System.out.println("Enter the shoe price :");
+//         int price =s.nextInt();
+
+//         if(price%3==0 && price%5==0){
+//             System.out.println("jone can buy the shoe");
+//         }else{
+//             System.out.println("jone can't buy the shoe");
+//         }
+//     }
+// }
+
+// 10) Write a java program to find out greatest of two numbers?
+
 import java.util.*;
 
 public class Basicproblem1 {
     public static void main(String[] args) {
-        Scanner s =new Scanner(System.in);
-        System.out.println("Enter the shoe price :");
-        int price =s.nextInt();
+    Scanner s = new Scanner(System.in);
 
-        if(price%3==0 && price%5==0){
-            System.out.println("jone can buy the shoe");
-        }else{
-            System.out.println("jone can't buy the shoe");
-        }
+    System.out.println("Enter the First number");
+    int firstnumber =s.nextInt();
+
+    System.out.println("Enter the Second number");
+    int secondnumber =s.nextInt();
+
+    int max =(firstnumber>secondnumber)?firstnumber:secondnumber;
+    System.out.println(max+"Greatest Number");
+    s.close();
     }
 }
