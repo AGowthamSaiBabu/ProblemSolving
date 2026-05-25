@@ -53,6 +53,7 @@ import java.util.*;
 public class Basicproblem2 {
     public static void main(String[] args) {
         int m1=89,m2=36,m3=44,m4=51,m5=62,m6=73,total=0;
+        
 
 		total=m1+m2+m3+m4+m5+m6;
 		float average = (float)total/6;
