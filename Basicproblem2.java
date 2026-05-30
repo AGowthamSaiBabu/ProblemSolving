@@ -76,29 +76,48 @@
 
 // 14) Write a java program to accept week number (1-7) then display the day of the week?
 
-import java.util.*;
+// import java.util.*;
+
+// public class Basicproblem2 {
+//     public static void main(String[] args) {
+// 	Scanner s = new Scanner(System.in);
+// 	System.out.println("Enter the Week days");
+// 	int week =s.nextInt();
+
+// 	if(week==1)
+// 		System.out.println("Monday");
+// 	else if(week==2)
+// 		System.out.println("Tuesaday");
+// 	else if(week==3)
+// 		System.out.println("Wednesday");
+// 	else if(week==4)
+// 		System.out.println("Thursday");
+// 	else if(week==5)
+// 		System.out.println("Friday");
+// 	else if(week==6)
+// 		System.out.println("Saturday");
+// 	else if(week==7)
+// 		System.out.println("Sunday");
+// 	else
+// 		System.out.println("Invalid week number");
+//     }
+// }
+
+// 15) Write a java program to compare two dates?
+
+import java.time.LocalDate;
 
 public class Basicproblem2 {
     public static void main(String[] args) {
-	Scanner s = new Scanner(System.in);
-	System.out.println("Enter the Week days");
-	int week =s.nextInt();
+	LocalDate Date1 = LocalDate.of(2025,02,23);
+	LocalDate Data2 = LocalDate.now();
 
-	if(week==1)
-		System.out.println("Monday");
-	else if(week==2)
-		System.out.println("Tuesaday");
-	else if(week==3)
-		System.out.println("Wednesday");
-	else if(week==4)
-		System.out.println("Thursday");
-	else if(week==5)
-		System.out.println("Friday");
-	else if(week==6)
-		System.out.println("Saturday");
-	else if(week==7)
-		System.out.println("Sunday");
+	if(Date1.compareTo(Data2)>0)
+		System.out.println("Date1 is Greatest");
+	else if(Date1.compareTo(Data2)<0)
+		System.out.println("Data2 is Greatest");
 	else
-		System.out.println("Invalid week number");
+		System.out.println("Both are same");
     }
+		
 }
