@@ -105,19 +105,42 @@
 
 // 15) Write a java program to compare two dates?
 
-import java.time.LocalDate;
+// import java.time.LocalDate;
+
+// public class Basicproblem2 {
+//     public static void main(String[] args) {
+// 	LocalDate Date1 = LocalDate.of(2025,02,23);
+// 	LocalDate Data2 = LocalDate.now();
+
+// 	if(Date1.compareTo(Data2)>0)
+// 		System.out.println("Date1 is Greatest");
+// 	else if(Date1.compareTo(Data2)<0)
+// 		System.out.println("Data2 is Greatest");
+// 	else
+// 		System.out.println("Both are same");
+//     }
+		
+// }
+
+// 16) Road Traveling program 
+
+import java.util.*;;
 
 public class Basicproblem2 {
     public static void main(String[] args) {
-	LocalDate Date1 = LocalDate.of(2025,02,23);
-	LocalDate Data2 = LocalDate.now();
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the Distance travelled(in kms):");
+		int distance =s.nextInt();
 
-	if(Date1.compareTo(Data2)>0)
-		System.out.println("Date1 is Greatest");
-	else if(Date1.compareTo(Data2)<0)
-		System.out.println("Data2 is Greatest");
-	else
-		System.out.println("Both are same");
-    }
-		
+		double costCharges=0;
+
+		if(distance==1){
+			costCharges=5;
+		}else if(distance<=20){
+			costCharges=distance*2;
+		}else if(distance>20){
+			costCharges = distance*1.5d;
+		}
+		System.out.println("The total charge for traveling"+distance+"Km is:"+costCharges+"rupees");
+    }		
 }
