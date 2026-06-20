@@ -124,23 +124,95 @@
 
 // 16) Road Traveling program 
 
+// import java.util.*;;
+
+// public class Basicproblem2 {
+//     public static void main(String[] args) {
+// 		Scanner s = new Scanner(System.in);
+// 		System.out.println("Enter the Distance travelled(in kms):");
+// 		int distance =s.nextInt();
+
+// 		double costCharges=0;
+
+// 		if(distance==1){
+// 			costCharges=5;
+// 		}else if(distance<=20){
+// 			costCharges=distance*2;
+// 		}else if(distance>20){
+// 			costCharges = distance*1.5d;
+// 		}
+// 		System.out.println("The total charge for traveling"+distance+"Km is:"+costCharges+"rupees");
+//     }		
+// }
+
+// 17)
+
+// Shipping Cost program  
+
+// Write a java program to calculate costs based on user input. 
+// The program should prompt users to enter the total weight of items 
+// (in kilograms) and the shipping destination (domestic or international).
+//  For domestic orders, the program should charge Rs.500 for weights up to 
+// 5 kg and Rs.100 per additional kg. For international orders, it should 
+// charge Rs.1000 for weights up to 5 kg, Rs.200 per additional kg, and an
+//  Rs.500 surcharge for weights exceeding 10 kg. Print calculated shipping cost.
+
+// Input:
+// 	Enter total weight of items (in kilograms) : 11 
+// 	Enter the shipping destination : domestic 
+
+// Output:
+	 
+// 	Calculated shipping cost : 1100.0
+// 	(11kg = Rs. 500 + 6*100(600))
+
 import java.util.*;;
 
 public class Basicproblem2 {
     public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		System.out.println("Enter the Distance travelled(in kms):");
-		int distance =s.nextInt();
+			System.out.println("Enter total weight of items (in kilograms) :");
+		int weight=s.nextInt(); // 11
+
+		System.out.println("Enter the shipping destination :");
+		String destination = s.next().toLowerCase();
 
 		double costCharges=0;
 
-		if(distance==1){
-			costCharges=5;
-		}else if(distance<=20){
-			costCharges=distance*2;
-		}else if(distance>20){
-			costCharges = distance*1.5d;
+		if(destination.equals("domestic"))
+		{
+			if(weight<=5)
+			{
+				costCharges= 500;
+			}
+			else 
+			{
+				costCharges= 500 + (weight-5)*100;
+			}
 		}
-		System.out.println("The total charge for traveling"+distance+"Km is:"+costCharges+"rupees");
+		else if(destination.equals("international"))
+		{
+			if(weight<=5)
+			{
+				costCharges=1000;
+			}
+			else if(weight>5 && weight<=10)
+			{
+				costCharges= 1000 + (weight-5)*200;
+			}
+			else if(weight>10)
+			{
+				costCharges= 1000 + (weight-5)*200 + 500;
+			}
+
+		}
+		else
+		{
+			System.out.println("Invalid destination");
+			return;
+		}
+
+		System.out.println("Calculated shipping cost :"+ costCharges);
+
     }		
 }
