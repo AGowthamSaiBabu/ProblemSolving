@@ -166,6 +166,7 @@
 // 	Calculated shipping cost : 1100.0
 // 	(11kg = Rs. 500 + 6*100(600))
 
+
 import java.util.*;;
 
 public class Basicproblem2 {
