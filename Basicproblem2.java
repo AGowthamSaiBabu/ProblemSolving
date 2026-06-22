@@ -167,53 +167,83 @@
 // 	(11kg = Rs. 500 + 6*100(600))
 
 
+// import java.util.*;;
+
+// public class Basicproblem2 {
+//     public static void main(String[] args) {
+// 		Scanner s = new Scanner(System.in);
+// 			System.out.println("Enter total weight of items (in kilograms) :");
+// 		int weight=s.nextInt(); // 11
+
+// 		System.out.println("Enter the shipping destination :");
+// 		String destination = s.next().toLowerCase();
+
+// 		double costCharges=0;
+
+// 		if(destination.equals("domestic"))
+// 		{
+// 			if(weight<=5)
+// 			{
+// 				costCharges= 500;
+// 			}
+// 			else 
+// 			{
+// 				costCharges= 500 + (weight-5)*100;
+// 			}
+// 		}
+// 		else if(destination.equals("international"))
+// 		{
+// 			if(weight<=5)
+// 			{
+// 				costCharges=1000;
+// 			}
+// 			else if(weight>5 && weight<=10)
+// 			{
+// 				costCharges= 1000 + (weight-5)*200;
+// 			}
+// 			else if(weight>10)
+// 			{
+// 				costCharges= 1000 + (weight-5)*200 + 500;
+// 			}
+
+// 		}
+// 		else
+// 		{
+// 			System.out.println("Invalid destination");
+// 			return;
+// 		}
+
+// 		System.out.println("Calculated shipping cost :"+ costCharges);
+
+//     }		
+// }
+
+//18) Write a java program to perform swapping of two numbers without using third variable?
+
 import java.util.*;;
 
 public class Basicproblem2 {
     public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-			System.out.println("Enter total weight of items (in kilograms) :");
-		int weight=s.nextInt(); // 11
 
-		System.out.println("Enter the shipping destination :");
-		String destination = s.next().toLowerCase();
+		System.out.println("Enter the first Number");
+		int a =s.nextInt();
 
-		double costCharges=0;
+		System.out.println("Enter the Second Number");
+		int b =s.nextInt();
 
-		if(destination.equals("domestic"))
-		{
-			if(weight<=5)
-			{
-				costCharges= 500;
-			}
-			else 
-			{
-				costCharges= 500 + (weight-5)*100;
-			}
-		}
-		else if(destination.equals("international"))
-		{
-			if(weight<=5)
-			{
-				costCharges=1000;
-			}
-			else if(weight>5 && weight<=10)
-			{
-				costCharges= 1000 + (weight-5)*200;
-			}
-			else if(weight>10)
-			{
-				costCharges= 1000 + (weight-5)*200 + 500;
-			}
+		System.out.println("Before Swapping ");
+		System.out.println("a ="+ a);
+		System.out.println(" b = " + b);
 
-		}
-		else
-		{
-			System.out.println("Invalid destination");
-			return;
-		}
+		a = a + b;
+		b = a - b;
+		a = a - b;
 
-		System.out.println("Calculated shipping cost :"+ costCharges);
+		System.out.println("After Swapping");
+		System.out.println("a = "+a);
+		System.err.println("b = "+b);
 
+		s.close();
     }		
 }
