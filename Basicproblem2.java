@@ -220,29 +220,48 @@
 
 //18) Write a java program to perform swapping of two numbers without using third variable?
 
+// import java.util.*;;
+
+// public class Basicproblem2 {
+//     public static void main(String[] args) {
+// 		Scanner s = new Scanner(System.in);
+
+// 		System.out.println("Enter the first Number");
+// 		int a =s.nextInt();
+
+// 		System.out.println("Enter the Second Number");
+// 		int b =s.nextInt();
+
+// 		System.out.println("Before Swapping ");
+// 		System.out.println("a ="+ a);
+// 		System.out.println(" b = " + b);
+
+// 		a = a + b;
+// 		b = a - b;
+// 		a = a - b;
+
+// 		System.out.println("After Swapping");
+// 		System.out.println("a = "+a);
+// 		System.err.println("b = "+b);
+
+// 		s.close();
+//     }		
+// }
+
+// 19 Q) Convert CGPA to percentage
+
 import java.util.*;;
 
 public class Basicproblem2 {
     public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 
-		System.out.println("Enter the first Number");
-		int a =s.nextInt();
+		System.out.println("Enter the CGPA :");
+		float cgpa =s.nextFloat();
 
-		System.out.println("Enter the Second Number");
-		int b =s.nextInt();
+		float percentage =cgpa * 9.5f;
 
-		System.out.println("Before Swapping ");
-		System.out.println("a ="+ a);
-		System.out.println(" b = " + b);
-
-		a = a + b;
-		b = a - b;
-		a = a - b;
-
-		System.out.println("After Swapping");
-		System.out.println("a = "+a);
-		System.err.println("b = "+b);
+		System.out.printf("CGPA to Percentage is =%.2f",percentage);
 
 		s.close();
     }		
