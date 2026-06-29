@@ -250,18 +250,55 @@
 
 // 19 Q) Convert CGPA to percentage
 
-import java.util.*;;
+// import java.util.*;;
+
+// public class Basicproblem2 {
+//     public static void main(String[] args) {
+// 		Scanner s = new Scanner(System.in);
+
+// 		System.out.println("Enter the CGPA :");
+// 		float cgpa =s.nextFloat();
+
+// 		float percentage =cgpa * 9.5f;
+
+// 		System.out.printf("CGPA to Percentage is =%.2f",percentage);
+
+// 		s.close();
+//     }		
+// }
+
+
+// 20)
+// There is one running race between different participants. So in that race two partner need to finish the race. There is four rounds of race in that each lane length is 100m.So in that one participant will cover 30% of the lane length and another partner will cover remaining length of lane. So print each participant covers distance in that race.
+// Input:
+// 		Enter the length of the each lane: 100
+// 		Enter the number of rounds: 4
+// 		Enter the percentage of first participant to cover: 30
+
+// Output:
+// 		First participant will cover 120 meters in a total race
+// 		Second participant will cover 280 meters in a total race
+
+import java.util.*;
 
 public class Basicproblem2 {
     public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the Length of the each Lane ");
+		int LaneLength =s.nextInt();
+		System.out.println("Enter the Number of rounds");
+		int Rounds =s.nextInt();
+		System.out.println("Enter the percentage of the Fistparticipant to cover");
+		int FistparticipantPer =s.nextInt();
 
-		System.out.println("Enter the CGPA :");
-		float cgpa =s.nextFloat();
+		int TotalDistance =LaneLength * Rounds;
 
-		float percentage =cgpa * 9.5f;
+		int Fistparticipant =TotalDistance * FistparticipantPer /100;
 
-		System.out.printf("CGPA to Percentage is =%.2f",percentage);
+		int Secondparticipant =TotalDistance -Fistparticipant;
+
+		System.out.println("First participant will cover "+Fistparticipant+" meters in a total race");
+		System.out.println("Second participant will cover "+Secondparticipant+" meters in a total race");
 
 		s.close();
     }		
