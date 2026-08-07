@@ -45,14 +45,29 @@
 
 //23) Write a java program to display 10 natural numbers?
 
+// import java.util.*;
+// public class Basicproblem3{
+//     public static void main(String[] args) {
+//         int i=1;
+
+//         while(i<=10){
+//             System.out.println(i);
+//             i++;
+//         }
+//     }
+// }
+
+// 24) Write a java program to display sum of 10 natural numbers?
+
 import java.util.*;
 public class Basicproblem3{
     public static void main(String[] args) {
-        int i=1;
-
+        int i =1;
+        int sum =0;
         while(i<=10){
-            System.out.println(i);
+            sum = sum+i;
             i++;
         }
+        System.out.println(sum);
     }
 }
