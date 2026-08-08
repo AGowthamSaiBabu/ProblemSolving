@@ -59,15 +59,33 @@
 
 // 24) Write a java program to display sum of 10 natural numbers?
 
+// import java.util.*;
+// public class Basicproblem3{
+//     public static void main(String[] args) {
+//         int i =1;
+//         int sum =0;
+//         while(i<=10){
+//             sum = sum+i;
+//             i++;
+//         }
+//         System.out.println(sum);
+//     }
+// }
+
+// Q) Write a java program to display factorial of a given number?
+
 import java.util.*;
 public class Basicproblem3{
     public static void main(String[] args) {
-        int i =1;
-        int sum =0;
-        while(i<=10){
-            sum = sum+i;
-            i++;
+       Scanner s = new Scanner(System.in);
+       System.out.println("Enter the Number"); 
+       int num =s.nextInt();
+        int fact =1;
+        while(num>=1){
+            fact = fact*num;
+            num--;
         }
-        System.out.println(sum);
+        System.out.println(fact);
+        s.close();
     }
 }
