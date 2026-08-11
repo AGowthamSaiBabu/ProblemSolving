@@ -72,20 +72,38 @@
 //     }
 // }
 
-// Q) Write a java program to display factorial of a given number?
+// 25) Write a java program to display factorial of a given number?
+
+// import java.util.*;
+// public class Basicproblem3{
+//     public static void main(String[] args) {
+//        Scanner s = new Scanner(System.in);
+//        System.out.println("Enter the Number"); 
+//        int num =s.nextInt();
+//         int fact =1;
+//         while(num>=1){
+//             fact = fact*num;
+//             num--;
+//         }
+//         System.out.println(fact);
+//         s.close();
+//     }
+// }
+
+// 26) Write a java program to display multiplication table of a given number?
 
 import java.util.*;
 public class Basicproblem3{
     public static void main(String[] args) {
-       Scanner s = new Scanner(System.in);
-       System.out.println("Enter the Number"); 
-       int num =s.nextInt();
-        int fact =1;
-        while(num>=1){
-            fact = fact*num;
-            num--;
-        }
-        System.out.println(fact);
-        s.close();
+    Scanner s =new Scanner(System.in);
+    System.out.println("Enter the number");
+    int num =s.nextInt();
+
+    int i=1;
+    while(i<=10){
+        System.out.println(num+" * "+i+" = "+num*i);
+        i++;
+      }
+      s.close();
     }
 }
