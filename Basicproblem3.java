@@ -110,21 +110,46 @@
 
 // 27) Write a java program to perform sum of digits of a given number?
 
+// import java.util.*;
+// public class Basicproblem3{
+//     public static void main(String[] args) {
+//     Scanner s =new Scanner(System.in);
+//     System.out.println("Enter Number ");
+//     int number =s.nextInt();
+//     int rem =0;
+//     int sum =0;
+//     while(number>0){
+//       rem =number%10;
+//       sum =sum+rem;
+//       number =number/10;
+
+//     }
+//     System.err.println(sum);
+//       s.close();
+//     }
+// }
+
+// Q) Write a java program to find out given number is palindrome or not?
+
 import java.util.*;
 public class Basicproblem3{
     public static void main(String[] args) {
     Scanner s =new Scanner(System.in);
     System.out.println("Enter Number ");
     int number =s.nextInt();
-    int rem =0;
-    int sum =0;
-    while(number>0){
-      rem =number%10;
-      sum =sum+rem;
-      number =number/10;
+    int original = number;
+    int rev =0;
 
+    while(number !=0){
+      int digit =number%10;
+      rev =(rev*10)+digit;
+      number = number/10;
     }
-    System.err.println(sum);
+    if(original == rev){
+      System.out.println("palindrome");
+    }else{
+      System.out.println("Not palindrome");
+    }
       s.close();
     }
 }
